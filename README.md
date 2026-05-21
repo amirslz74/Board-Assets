@@ -13,7 +13,6 @@ Personal hardware engineering knowledge base and reusable PCB design resource li
 - Automotive Design Notes
 
 ## Tools
-- EasyEDA
 - KiCad
 - Altium
 - LTspice
