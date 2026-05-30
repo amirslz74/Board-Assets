@@ -59,7 +59,7 @@ Board-Assets/
 | ![Proteus](https://img.shields.io/badge/Proteus-Simulation-blue?style=flat-square) | SPICE models |
 | ![LTspice](https://img.shields.io/badge/LTspice-Simulation-red?style=flat-square) | SPICE models |
 | ![STM32CubeIDE](https://img.shields.io/badge/STM32CubeIDE-blue?style=flat-square) | MCU references |
-| ![ESPIDF](https://img.shields.io/badge/STM32CubeIDE-red?style=flat-square) | MCU references |
+| ![ESPIDF](https://img.shields.io/badge/ESP32-red?style=flat-square) | MCU references |
 ---
 
 ## 📋 Datasheets Coverage
