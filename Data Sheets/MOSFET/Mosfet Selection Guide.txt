@@ -1,0 +1,77 @@
+# MOSFET Selection Guide
+Quick reference for common MOSFETs used in embedded, automotive, and industrial PCB designs.
+
+---
+
+## Logic-Level MOSFETs
+> Gate threshold ~1-2V — driven directly by STM32 / ESP32 / Arduino without a gate driver IC.
+
+| Part | Vds | Id | Rds(on) | Package | Best For |
+|------|-----|----|---------|---------|----------|
+| IRL540N | 100V | 36A | 44mΩ | TO-220 | General switching, motor control |
+| IRLZ44N | 55V | 47A | 28mΩ | TO-220 | High current motor/load switching |
+| IRL3803 | 30V | 140A | 6mΩ | TO-220 | Very high current, low voltage |
+| BSS138 | 50V | 200mA | 3.5Ω | SOT-23 | Level shifting, small signal |
+| 2N7000 | 60V | 200mA | 5Ω | TO-92 | Signal switching, low side |
+
+---
+
+## Standard MOSFETs
+> Requires 10V+ gate drive — use with IR2104 / IR2110 or similar gate driver IC.
+
+| Part | Vds | Id | Rds(on) | Package | Best For |
+|------|-----|----|---------|---------|----------|
+| IRFZ44N | 55V | 49A | 17.5mΩ | TO-220 | Most popular general purpose |
+| IRF3205 | 55V | 110A | 8mΩ | TO-220 | High current, H-bridge, inverter |
+| IRF540N | 100V | 33A | 77mΩ | TO-220 | General switching up to 100V |
+| IRF9540N | 100V | 23A | 117mΩ | TO-220 | P-channel, high-side switch |
+| IRF4905 | 55V | 74A | 20mΩ | TO-220 | P-channel high current |
+
+---
+
+## Automotive Grade MOSFETs
+> AEC-Q101 qualified — rated for wide temperature range and harsh environments.
+
+| Part | Vds | Id | Rds(on) | Package | Best For |
+|------|-----|----|---------|---------|----------|
+| AUIRF3205 | 55V | 110A | 8mΩ | TO-220 | Automotive version of IRF3205 |
+| STP55NF06 | 60V | 55A | 18mΩ | TO-220 | ECU switching, STMicro |
+| IPB025N10N | 100V | 100A | 2.5mΩ | D2PAK | High current automotive |
+| IRFB4310 | 100V | 140A | 11mΩ | TO-220 | Motor inverter, BLDC |
+
+---
+
+## High Voltage MOSFETs
+> Industrial and power supply applications — 400V to 600V range.
+
+| Part | Vds | Id | Rds(on) | Package | Best For |
+|------|-----|----|---------|---------|----------|
+| IRF740 | 400V | 10A | 550mΩ | TO-220 | SMPS, flyback converters |
+| IRF840 | 500V | 8A | 800mΩ | TO-220 | General high voltage switching |
+| FCH76N60N | 600V | 76A | 62mΩ | TO-247 | High power inverters |
+| IPW60R045 | 600V | 45A | 45mΩ | TO-247 | Infineon CoolMOS, SMPS |
+
+---
+
+## Quick Selection Guide
+
+```
+Need to switch from STM32/ESP32 pin directly?
+  → Logic-Level: IRL540N / IRLZ44N / BSS138
+
+Need high current motor control with gate driver?
+  → Standard: IRF3205 / IRFZ44N
+
+Building an automotive ECU or car electronics?
+  → Automotive: STP55NF06 / IPB025N10N
+
+Building a power supply or industrial inverter?
+  → High Voltage: IRF840 / IPW60R045
+
+Need P-channel for high-side switching?
+  → IRF9540N (standard) / IRF4905 (high current)
+```
+
+---
+
+*Maintained as part of Board-Assets — github.com/amirslz74/Board-Assets*
