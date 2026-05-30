@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="600"
+   height="400"
+   id="NATO Map Symbol">
+  <path
+     id="path812"
+     d="M 4.5624084,199.99999 H 595.43762"
+     style="fill:none;fill-rule:evenodd;stroke:#00ff00;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     id="path814"
+     d="M 300.00003,4.5765228 V 395.42346"
+     style="fill:none;fill-rule:evenodd;stroke:#00ff00;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" />
+  <g
+     id="Tpt">
+  <path
+     style="fill:none;stroke:#00ff00;stroke-width:10;stroke-miterlimit:4"
+     id="Wheel"
+     d="m 419.27057,200 a 119.27057,119.27057 0 1 1 -238.54113,0 119.27057,119.27057 0 1 1 238.54113,0 z" />
+  <path
+     style="fill:none;stroke:#00ff00;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4"
+     id="Wheel-D1"
+     d="M 215.66298,284.33702 384.33702,115.66298" />
+  <path
+     style="fill:none;stroke:#00ff00;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4"
+     id="Wheel-D2"
+     d="M 215.66298,115.66298 384.33702,284.33702" />
+  </g>
+  <path
+     id="Friendly Frame"
+     d="M 5,5 H 595 V 395 H 5 Z"
+     style="fill:none;stroke:#00ff00;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4" />
+</svg>
