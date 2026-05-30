@@ -38,8 +38,13 @@ Board-Assets/
 │   ├── App-Notes/         # Application notes from manufacturers
 │   └── Checklists/        # Bring-up, review, and QA checklists
 │
+├── 📂 Librarys/
+│   ├── EasyEDA-pro/      
+│   ├── EasyEDA/          
+│   ├── Altiume/  
+│   └── KiCad/         
+│
 └── 📂 Simulation/
-    └── LTspice/           # SPICE models and simulation files
 ```
 
 ---
@@ -51,9 +56,10 @@ Board-Assets/
 | ![Altium](https://img.shields.io/badge/Altium_Designer-A5915F?style=flat-square) | Symbols, Footprints, 3D Models |
 | ![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=flat-square) | Symbols, Footprints |
 | ![EasyEDA](https://img.shields.io/badge/EasyEDA-1DB954?style=flat-square) | Schematic & PCB references |
+| ![Proteus](https://img.shields.io/badge/Proteus-Simulation-blue?style=flat-square) | SPICE models |
 | ![LTspice](https://img.shields.io/badge/LTspice-Simulation-red?style=flat-square) | SPICE models |
 | ![STM32CubeIDE](https://img.shields.io/badge/STM32CubeIDE-blue?style=flat-square) | MCU references |
-
+| ![ESPIDF](https://img.shields.io/badge/STM32CubeIDE-red?style=flat-square) | MCU references |
 ---
 
 ## 📋 Datasheets Coverage
